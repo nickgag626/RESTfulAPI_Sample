@@ -257,10 +257,10 @@
 <h1 id='api-library'>API Library</h1>
 <p>Please reference this section for a detailed view of the APIs provided within the Ingenico One WSAPI platform.</p>
 <h1 id='authentication'>Authentication</h1>
-<p>Authenticate your account by including your application token in the request field <code>X-Roam-Key</code>. If the token and credentials are valid, the API will return a response with the necessary session token information. This session token can be used for accessing other APIs available within our library. </p>
+<p>Authenticate your account by including your application token in the request field <code>X-Roam-Key</code>. If the token and credentials are valid, the API returns a response with the necessary session token information. This session token is required for accessing other APIs available within our library. </p>
 
 <blockquote>
-<p>You will receive a session token by logging in</p>
+<p>Receive a session token by logging in.</p>
 </blockquote>
 
 <p>Ingenico uses application tokens to allow access to the API suite. You can register a new application token at our <a href="http://developer.ingenico.us">developer portal</a>.</p>
@@ -273,7 +273,7 @@
 <pre class="highlight javascript tab-javascript"><code><span class="nx">POST</span> <span class="p">[</span><span class="nx">domain</span><span class="p">]</span><span class="o">/</span><span class="nx">wsapi</span><span class="o">/</span><span class="nx">Authentication</span><span class="o">/</span>
 
 </code></pre>
-<p>First, you must log in to your account using your application token and assigned credentials. As stated earlier, this will return your session token along with other various user settings.</p>
+<p>First, log in to your account using your application token and assigned credentials. As stated earlier, this returns your session token along with other various user settings.</p>
 <h3 id='headers'>Headers</h3>
 <blockquote>
 <p>Header</p>
@@ -347,7 +347,7 @@
 </tr>
 </tbody></table>
 <h3 id='response'>Response</h3>
-<p>If the request is successful, you will receive a response with the following outputs defined. </p>
+<p>A successful request outputs the response as shown below:</p>
 
 <blockquote>
 <p>Response:</p>
@@ -494,7 +494,7 @@
 </tbody></table>
 
 <aside class="success">
-Remember — This will return your session token!
+Remember — This returns your session token!
 </aside>
 <h2 id='refresh-a-session'>Refresh a Session</h2>
 <blockquote>
@@ -503,7 +503,7 @@ Remember — This will return your session token!
 <pre class="highlight javascript tab-javascript"><code><span class="nx">PUT</span> <span class="p">[</span><span class="nx">domain</span><span class="p">]</span><span class="o">/</span><span class="nx">wsapi</span><span class="o">/</span><span class="nx">Authentication</span><span class="o">/</span>
 
 </code></pre>
-<p>This call is used to keep a logged-in session alive. This API method will refresh a valid session and extend the session token expiration time. </p>
+<p>This call keeps a logged-in session alive. This API method refreshes a valid session and extends the session token expiration time. </p>
 <h3 id='headers-2'>Headers</h3>
 <blockquote>
 <p>Header</p>
@@ -569,7 +569,7 @@ Remember — This will return your session token!
 </tr>
 </tbody></table>
 <h3 id='response-2'>Response</h3>
-<p>If your request is successful, you will receive a response with the following outputs defined:</p>
+<p>A successful request outputs the response as shown below:</p>
 
 <blockquote>
 <p>Response:</p>
@@ -645,7 +645,7 @@ Remember — This will return your session token!
 <pre class="highlight javascript tab-javascript"><code><span class="nx">DELETE</span> <span class="p">[</span><span class="nx">domain</span><span class="p">]</span><span class="o">/</span><span class="nx">wsapi</span><span class="o">/</span><span class="nx">Authentication</span><span class="o">/</span>
 
 </code></pre>
-<p>This call is used to log the user out of an active session, invalidating the existing session token.  </p>
+<p>This call logs the user out of an active session, invalidating the existing session token.  </p>
 <h3 id='headers-3'>Headers</h3>
 <blockquote>
 <p>Header</p>
